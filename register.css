@@ -1,0 +1,102 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+.container{ 
+    max-width: 500px;
+    border: solid 1px silver;
+    box-sizing: border-box ;
+    margin: auto;
+    border-bottom: solid 10px #46A358;
+    padding: 52px 100px 50px;
+
+}
+.enter_links{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%;
+    margin-bottom: 40px;
+    
+    
+}
+.login{
+     text-decoration: none;
+    color: #3D3D3D;
+    
+   
+}
+.register{
+     text-decoration: none;
+    color: #46A358;
+}
+.enter{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 123%;
+    margin-bottom: 14px;
+}
+.register_form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+input{
+    border-radius: 5px;
+border: 1px solid #EAEAEA;
+padding: 12px 126px 12px 14px;
+color: #A5A5A5;
+font-size: 14px;
+}
+.button{
+    background-color: #46A358;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 118px 13px 119px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 36px;
+}
+.register_with{
+text-align: center;
+color: #3D3D3D;
+font-size: 13px;
+font-weight: 400;
+margin-bottom: 27px;
+
+    }
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.google{
+    text-decoration: none;
+     font-weight: 500;
+    font-size: 13px;
+    color: #727272;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    padding: 10px 68px 10px 69px;
+    
+  
+}
+.facebook{
+    text-decoration: none;
+     font-weight: 500;
+    font-size: 13px;
+    color: #727272;
+    border-radius: 5px;
+border: 1px solid #EAEAEA;
+padding: 12px 63px 12px 64px;
+}
+.logo{
+   float: left;
+   width: 20px;
+   height: 20px;
+   
+}
+   
