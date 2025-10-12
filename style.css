@@ -1,4 +1,4 @@
-/*styles for hw1*/
-.p {
-    color: blue;
+.container{
+    max-width: 1200px;
+    margin: auto;
 }
