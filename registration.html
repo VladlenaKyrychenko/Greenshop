@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="register.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="reset.css"> 
+   <link rel="stylesheet" href="register.css">
+ 
 <body>
     <div class="container">
+        <img class="close" src="./img/X.svg" alt="close form">
     <div class="enter_links">
     <a class="login" href="#">Login</a>
+    <div class="line">I</div>
     <a class="register" href="#">Register</a>
 </div>
     <p class="enter">
@@ -20,10 +21,17 @@
     <form action="" method="post" action="#">
         <div class="register_form">
         <input type="text" name="username" placeholder="Username"> 
-        <input type="email" name="email" placeholder="Enter your email address">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="password" placeholder="Confirm Password">
         </div>
+        <div class="register_form">
+        <input type="email" name="email" placeholder="Enter your email address">
+       </div>
+       <div class="password">
+        <input type="password" name="password" placeholder="Password">
+        <img class="show_password" src="./img/Hide.png" alt="show password">
+        </div>
+         <div class="confirm_password">
+        <input type="password" name="password" placeholder="Confirm Password">
+         </div>
         <button class="button" type="submit">Register</button> 
         
     </form>
