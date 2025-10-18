@@ -1,3 +1,140 @@
+@font-face {
+    font-family: "Cera Pro Bold";
+    src: url('../fonts/CeraPro-Bold.woff') format('woff'),
+    url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+    url('../fonts/CeraPro-Bold.ttf') format('truetype'),
+    url('../fonts/CeraPro-Bold.eot') format('eot');
+}
+@font-face {
+    font-family: "Cera Pro Light";
+    src: url('../fonts/CeraPro-Light.woff') format('woff'),
+    url('../fonts/CeraPro-Light.woff2') format('woff2'),
+    url('../fonts/CeraPro-Light.ttf') format('truetype'),
+    url('../fonts/CeraPro-Light.eot') format('eot');
+}
+@font-face {
+    font-family: "Cera Pro Regular";
+    src: url('../fonts/CeraPro-Regular.woff') format('woff'),
+    url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('../fonts/CeraPro-Regular.ttf') format('truetype'),
+    url('../fonts/CeraPro-Regular.eot') format('eot');
+}
+@font-face {
+    font-family: "Cera Pro Medium";
+    src: url('../fonts/CeraPro-Medium.woff') format('woff'),
+    url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('../fonts/CeraPro-Medium.ttf') format('truetype'),
+    url('../fonts/CeraPro-Medium.eot') format('eot');
+}
+@font-face {
+    font-family: "Cera Pro Black";
+    src: url('../fonts/CeraPro-Black.woff') format('woff'),
+    url('../fonts/CeraPro-Black.woff2') format('woff2'),
+    url('../fonts/CeraPro-Black.ttf') format('truetype'),
+    url('../fonts/CeraPro-Black.eot') format('eot');
+}
 .container{
-    margin: auto;
+    padding: 30px 120px 52px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid  rgba(70, 163, 88, 0.50);
+    margin-bottom: 12px;
+}
+body a{
+    color: #3D3D3D;
+   font-family: 'Cera Pro Regular', sans-serif;
+   font-size: 16px;
+}
+a.login{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+.list{
+    display: flex;
+    gap: 50px;
+}
+.list-item{
+   padding: 8px 0 25px; 
+   border-bottom: 3px solid transparent;  
+}
+.active{
+    font-weight: 700;
+    border-color: #46A358;
+}
+.login{
+    border-radius: 6px;
+    background-color: #46A358;
+    padding: 7px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+span{
+    display: inline-block;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+h1{
+    color: #3D3D3D;
+    font-size: 70px;
+    font-family: 'Cera Pro Black', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; 
+    margin-bottom: 5px;
+}
+.planet{
+   color: #46A358;
+   font-family: 'Cera Pro Black', sans-serif;
+   font-size: 70px;
+   font-weight: 900;
+   text-transform: uppercase; 
+}
+.main-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 68px 93px 85px 43px;
+}
+.desctiption{
+    color: #727272;
+    font-size: 14px;
+    margin-bottom: 44px;
+}
+.shop-now{
+    border-radius: 6px;
+    background: #46A358;
+    padding: 10px 26px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+}
+.plant{
+  position: relative;
+}
+.flower-small{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
 }
