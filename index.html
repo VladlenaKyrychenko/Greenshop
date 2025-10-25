@@ -37,7 +37,7 @@
 <main>
 <section class="main-page">
     <div class="welcome">
-<span>Welcome to GreenShop</span>
+<span class="span-welcome">Welcome to GreenShop</span>
 <h1>
     Let’s Make a Better <span class="planet">Planet</span>
 </h1>
@@ -54,67 +54,11 @@
     </div>
 </section>
 <section class="plants">
-    <div class="banner">
-        <nav>
-            <ul>
-                <li> 
-                    <a href="#">All plants</a></li>
-                <li> <a href="#">New Arrivals</a></li>
-                <li> <a href="#">Sale</a></li>
-            </ul>
-        </nav>
-        <p>Sort by: Default sorting</p>  
-    </div>
-    <div class="products">
-        <div class="plant1">
-        <img src="./img/image1.png" alt="cactus">
-        <span>Barbenton Daisy</span>
-        <span>$119.00</span>
-        </div>
-        <div class="plant2">
-        <img src="./img/product-21-320x3201.png" alt="begonia">
-        <span>Angel Wing Begonia</span>
-        <span>$169.00</span>
-        </div>
-         <div class="plant3">
-        <img src="./img/image2.png" alt="african violet">
-        <span>African Violet</span>
-        <span>$199.00</span>
-        </div>
-         <div class="plant4">
-        <img src="./img/013.png" alt="beach spider lily">
-        <span>Beach Spider Lily</span>
-        <span>$129.00</span>
-        </div>
-         <div class="plant5">
-        <img src="./img/image7.png" alt="blushing bromeliand">
-        <span>Blushing Bromeliad</span>
-        <span>$139.00</span>
-        </div>
-        <div class="plant6">
-        <img src="./img/image8.png" alt="aluminum plant">
-        <span>Aluminum Plant</span>
-        <span>$179.00</span>
-        </div>
-        <div class="plant7">
-        <img src="./img/image9.png" alt="bird's nest fern">
-        <span>Bird's Nest Fern</span>
-        <span>$99.00</span>
-        </div>
-        <div class="plant8">
-        <img src="./img/product-20-320x3201.png" alt="broadleaf lady palm">
-        <span>Broadleaf Lady Palm</span>
-        <span>$59.00</span>
-        </div>
-        <div class="plant9">
-        <img src="./img/image10.png" alt="chinese evergreen">
-        <span>Chinese Evergreen</span>
-        <span>$39.00</span>
-        </div>
-    </div>
-    <div class="categories">
-        <nav>
-            <ul>
+    <div class="leftside">
+   <div class="categories">
+    <h3>Categories</h3>
+        <nav class="categories-list">
+            <ul class="categories-list">
                 <li> <a href="#">House Plants</a> </li>
                 <li> <a href="#">Potter Plants</a> </li>
                 <li> <a href="#">Seeds </a></li>
@@ -126,21 +70,108 @@
                 <li> <a href="#">Accessories</a></li>   
             </ul>
         </nav>
-        <p> Super Sale</p>
-        <p>UP TO 75% OFF</p>
-        <img src="./img/image12.png" alt="plant">
+    
     </div>
-    <div class="pages">
-        <nav>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li></li>
+       <div class="sale">
+        <p class="letters"> Super Sale</p>
+        <p class="sale-precent">UP TO 75% OFF</p>
+        <img src="./img/image12.png" alt="plant">
+    </div> 
+</div>
+<div class="rightside">
+     <div class="banner">
+        <nav class="bn-list">
+            <ul class="bn-list">
+                <li class="banner-list">All plants</li>
+                <li class="banner-list">New Arrivals</li>
+                <li class="banner-list">Sale</li>
             </ul>
         </nav>
+        <div class="sorting">
+        <label for="sort">Sort by:</label>
+    <select id="sort" class="sort-selected">
+        <option>Price low</option>
+        <option selected>Default sorting</option>
+        <option>Price high</option>
+    </select> 
+</div>
     </div>
+    <div class="products">
+        <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/image1.png" alt="cactus">
+        <span class="caption">Barbenton Daisy</span>
+        <span class="price">$119.00</span>
+    </a>
+        </div>
+        <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/product-21-320x3201.png" alt="begonia">
+        <span class="caption">Angel Wing Begonia</span>
+        <span class="price">$169.00</span>
+    </a>
+        </div>
+         <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/image2.png" alt="african violet">
+        <span class="caption">African Violet</span>
+        <span class="price">$199.00</span>
+    </a>
+        </div>
+         <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/013.png" alt="beach spider lily">
+        <span class="caption">Beach Spider Lily</span>
+        <span class="price">$129.00</span>
+    </a>
+        </div>
+         <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/image7.png" alt="blushing bromeliand">
+        <span class="caption">Blushing Bromeliad</span>
+        <span class="price">$139.00</span>
+    </a>
+        </div>
+        <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/image8.png" alt="aluminum plant">
+        <span class="caption">Aluminum Plant</span>
+        <span class="price">$179.00</span>
+    </a>
+        </div>
+        <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/image9.png" alt="bird's nest fern">
+        <span class="caption">Bird's Nest Fern</span>
+        <span class="price">$99.00</span>
+    </a>
+        </div>
+        <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/product-20-320x3201.png" alt="broadleaf lady palm">
+        <span class="caption">Broadleaf Lady Palm</span>
+        <span class="price">$59.00</span>
+    </a>
+        </div>
+        <div class="plant">
+            <a href="#">
+        <img class="card-product" src="./img/image10.png" alt="chinese evergreen">
+        <span class="caption">Chinese Evergreen</span>
+        <span class="price">$39.00</span>
+    </a>
+        </div>
+    </div>
+   
+    <div class="pages">
+            <ul class="pages">
+                <li> <a class="page" href="#">1</a></li>
+                <li><a class="page" href="#">2</a></li>
+                <li><a class="page" href="#">3</a></li>
+                <li><a class="page" href="#">4</a></li>
+                <li><a class="page" href="#"><img src="./img/ArrowRight2.svg"></a></li>
+            </ul>
+    </div>
+</div>
 </div>
 </section>
 </main>

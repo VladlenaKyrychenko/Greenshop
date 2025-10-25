@@ -33,6 +33,10 @@
     url('../fonts/CeraPro-Black.ttf') format('truetype'),
     url('../fonts/CeraPro-Black.eot') format('eot');
 }
+@font-face {
+    font-family: "Hanged Letters";
+    src: url('../fonts/Hanged-Letters.ttf') format('truetype');
+}
 .container{
     padding: 30px 120px 52px;
     font-family: 'Cera Pro Regular', sans-serif;
@@ -53,7 +57,6 @@ body a{
 }
 a.login{
     color: #FFF;
-    font-size: 16px;
     font-weight: 500;
 }
 .list{
@@ -77,7 +80,7 @@ a.login{
     justify-content: center;
     gap: 4px;
 }
-span{
+.span-welcome{
     display: inline-block;
     color: #3D3D3D;
     font-size: 14px;
@@ -124,7 +127,6 @@ h1{
     border-radius: 6px;
     background: #46A358;
     padding: 10px 26px;
-    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     color: #FFF;
@@ -137,4 +139,124 @@ h1{
     position: absolute;
     bottom: 20px;
     left: 40px;
+}
+.plants{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.categories{
+    background-color: #FBFBFB;
+    padding-bottom: 377px;
+}
+h3{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0 15px 18px;
+}
+.categories-list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 16px;
+}
+.categories a:hover{
+    color: #46A358;
+    font-weight: 700;
+}
+.sale{
+    background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
+}
+.letters{
+    color: #46A358;
+font-family: "Hanged Letters";
+font-size: 65px;
+font-weight: 400;
+text-align: center;
+}
+.sale-precent{
+color: #3D3D3D;
+text-align: center;
+font-size: 23px;
+font-weight: 700;  
+}
+.rightside{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+   display: flex;
+    justify-content: space-between;  
+}
+.banner li:hover{
+    color: #46A358;
+    font-weight: 700;
+    border-bottom: 2px solid #46A358;
+}
+.bn-list{
+    display: flex;
+    gap: 38px;
+}
+.banner-list{
+    padding: 0 0 7px;
+}
+.sort-selected{
+    font-family: "Cera Pro Regular" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+option{
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+    font-weight: 400;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 33px 70px;
+    margin-bottom: 90px;
+    
+
+}
+.card-product{
+    padding: 25px 4px;
+    margin-bottom: 12px;
+}
+.caption{
+    display: block;
+    color: #3D3D3D;
+    font-family: "Cera Pro regular";
+    font-weight: 400;
+}
+.price{
+    display: block;
+    color: #46A358;
+    font-size: 18px;
+    font-weight: 700;
+}
+.pages{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+}
+.pages a:hover{
+   background-color: #46A358;
 }
