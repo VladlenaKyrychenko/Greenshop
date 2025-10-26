@@ -33,10 +33,7 @@
     url('../fonts/CeraPro-Black.ttf') format('truetype'),
     url('../fonts/CeraPro-Black.eot') format('eot');
 }
-@font-face {
-    font-family: "Hanged Letters";
-    src: url('../fonts/Hanged-Letters.ttf') format('truetype');
-}
+
 .container{
     padding: 30px 120px 52px;
     font-family: 'Cera Pro Regular', sans-serif;
@@ -171,40 +168,20 @@ h3{
     color: #46A358;
     font-weight: 700;
 }
-.sale{
-    background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
-}
-.letters{
-    color: #46A358;
-font-family: "Hanged Letters";
-font-size: 65px;
-font-weight: 400;
-text-align: center;
-}
-.sale-precent{
-color: #3D3D3D;
-text-align: center;
-font-size: 23px;
-font-weight: 700;  
-}
-.rightside{
-    display: flex;
-    flex-direction: column;
-}
-.banner{
+
+.nav{
    display: flex;
     justify-content: space-between;  
+    margin-bottom: 31px;
 }
-.banner li:hover{
+.nav li:hover{
     color: #46A358;
     font-weight: 700;
     border-bottom: 2px solid #46A358;
 }
-.bn-list{
+.nav-list{
     display: flex;
     gap: 38px;
-}
-.banner-list{
     padding: 0 0 7px;
 }
 .sort-selected{
@@ -222,13 +199,13 @@ option{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 33px 70px;
     margin-bottom: 90px;
-    
-
+}
+.plant{
+    margin-bottom:70px;
 }
 .card-product{
-    padding: 25px 4px;
+     
     margin-bottom: 12px;
 }
 .caption{
