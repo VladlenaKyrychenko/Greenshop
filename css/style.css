@@ -146,7 +146,6 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 .categories{
     background-color: #FBFBFB;
@@ -167,27 +166,26 @@ h3{
     color: #46A358;
     font-weight: 700;
 }
-
 .nav{
    display: flex;
     justify-content: space-between;  
     margin-bottom: 31px;
 }
-.nav ul li:hover{
-    font-weight: 700;
-    color: #46A358;
-    border-bottom: 2px solid #46A358;
-    padding-bottom: 5px;
-}
 .nav-list1{
     display: flex;
     gap: 38px;
+}
+.nav ul li:hover {
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 5px;
+    font-weight: 700;
 }
 .nav-list{
     padding: 0 0 7px 0;
 }
 .sort-selected{
-    font-family: "Cera Pro Regular" sans-serif;
+    font-family: "Cera Pro Regular", sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -215,7 +213,7 @@ option{
 .caption{
     display: block;
     color: #3D3D3D;
-    font-family: "Cera Pro regular";
+    font-family: "Cera Pro Regular", sans-serif;
     font-weight: 400;
 }
 .price{
@@ -252,8 +250,8 @@ option{
     background: #FBFBFB;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 138px;
-
 }
 .plant-info-img{
    width: 287px;
@@ -263,17 +261,15 @@ option{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
     padding: 37px 30px 46px 0;
-
 }
 .h2-blog{
+    color: #3D3D3D;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: "Cera Pro Black" sans-serif;
+    font-family: "Cera Pro Black", sans-serif;
     margin-bottom: 9px;
     text-align: right;
-
 }
 .plant-text p{
     color: #727272;
@@ -297,9 +293,10 @@ option{
    margin-bottom: 35px;
 }
 .blog-text h2{
+    color: #3D3D3D;
     font-size: 30px;
     font-weight: 700;
-    font-family: "Cera Pro Bold" sans-serif;
+    font-family: "Cera Pro Bold", sans-serif;
 }
 .blog-text p{
     color: #727272;
@@ -310,26 +307,29 @@ option{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 44px;
-    
+    gap: 44px;   
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FBFBFB;
 }
 .date-info{
     color: #46A358;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 4px;
-    background: #FBFBFB;
 }
 .blog-info{
     padding: 10px 13px;
-    text-align: start;
 }
 h4{
-color: #3D3D3D;
-font-size: 20px;
-font-weight: 700;
-font-family: "Cera Pro Bold" sans-serif;
-margin-bottom: 4px;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Cera Pro Bold", sans-serif;
+    margin-bottom: 4px;
 }
 .blogs-info{
     color: #727272;
@@ -342,10 +342,12 @@ margin-bottom: 4px;
     align-items: center;
     gap: 3px;
     color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Cera Pro Medium", sans-serif;
 }
 .read-more:hover{
-color: #46A358;
-font-size: 14px;
-font-weight: 500;
-
+    color: #46A358;
+    font-size: 14px;
+    font-weight: 500;
 }
