@@ -221,6 +221,7 @@ option{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    margin-bottom: 94px;
 }
 .page{
     display: flex;
