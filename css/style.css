@@ -129,7 +129,7 @@ h1{
     color: #FFF;
     cursor: pointer;
 }
-.plant{
+.plant1{
   position: relative;
 }
 .flower-small{
@@ -200,12 +200,9 @@ option{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 90px;
+    gap: 33px;
 }
-.plant{
-    margin-bottom:70px;
-}
-.card-product{
-     
+.card-product{   
     margin-bottom: 12px;
 }
 .caption{
