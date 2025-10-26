@@ -242,7 +242,6 @@ option{
     display: flex;
     justify-content: space-between;
     gap: 28px;
-    max-width: 1200px;
 }
 .plant-info-post{
     background: #FBFBFB;
