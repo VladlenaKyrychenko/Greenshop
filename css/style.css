@@ -43,12 +43,29 @@
     justify-content: space-between;
     align-items: start;
     border-bottom: 1px solid  rgba(70, 163, 88, 0.50);
-    margin-bottom: 12px;
 }
 body a{
     color: #3D3D3D;
    font-family: 'Cera Pro Regular', sans-serif;
    font-size: 16px;
+}
+header nav ul li::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: green;
+    margin-top: 22px;
+    transition: 0.4s;
+}
+header nav ul li:hover::after{
+    width: 100%;
+    
+}
+header nav ul li:hover{
+    font-family: 'Cera Pro Bold', sans-serif;
+    color: #3D3D3D;
+    font-weight: 700;
 }
 a.login{
     color: #FFF;
@@ -58,14 +75,7 @@ a.login{
     display: flex;
     gap: 50px;
 }
-.list-item{
-   padding: 8px 0 25px; 
-   border-bottom: 3px solid transparent;  
-}
-.active{
-    font-weight: 700;
-    border-color: #46A358;
-}
+
 .login{
     border-radius: 6px;
     background-color: #46A358;
@@ -204,9 +214,49 @@ option{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.plant::before{
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #46A358;
+    transition: 0.4s;
+}
+.plant:hover::before{
+    width: 100%;
 }
 .card-product{   
     margin-bottom: 12px;
+}
+.product-discount{
+    position: relative;
+    margin-bottom: 12px;
+}
+.discount{
+    color:#FFFFFF;
+    padding: 7px 8px;
+    background-color: #46A358;
+    position: absolute;
+    top: 14px;
+}
+.plant ul{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    bottom: -65px;
+    left: 0;
+    transition: 0.5s;
+}
+.plant:hover ul{
+    bottom: 65px;
+}
+.plant ul li:hover svg path{
+stroke: #46A358;
 }
 .caption{
     display: block;
@@ -215,16 +265,24 @@ option{
     font-weight: 400;
 }
 .price{
-    display: block;
+    display: flex;
+    gap: 16px;
     color: #46A358;
     font-size: 18px;
     font-weight: 700;
+}
+.price-line-through{
+    text-decoration: line-through;
+    color: #A5A5A5;
+    font-size: 18px;
+    font-weight: 400;
 }
 .pages{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
     margin-bottom: 94px;
+    
 }
 .page{
     display: flex;
@@ -234,9 +292,16 @@ option{
     height: 35px;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
+    font-size: 18px;
+    color: #3D3D3D;
 }
 .pages a:hover{
    background-color: #46A358;
+   color: #FFF;
+   font-size: 18px;
+}
+.pages a:hover svg path{
+    stroke: white;
 }
 .plant-info{
     display: flex;
@@ -315,16 +380,22 @@ option{
 .blogs{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     background-color: #FBFBFB;
+    width: 268px;
+}
+.blogs img{
+    width: 100%;
 }
 .date-info{
+    display: flex;
     color: #46A358;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 4px;
 }
 .blog-info{
+    display: flex;
+    flex-direction: column;
     padding: 10px 13px;
 }
 h4{
