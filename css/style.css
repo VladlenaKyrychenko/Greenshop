@@ -136,6 +136,13 @@ h1{
     text-transform: uppercase;
     color: #FFF;
     cursor: pointer;
+    border: 1px transparent solid;
+}
+.shop-now:hover{
+    background: white;
+    color: #3D3D3D;
+    border: 1px #46A358 solid;
+    
 }
 .plant1{
   position: relative;
@@ -351,29 +358,17 @@ stroke: #46A358;
      border-radius: 6px;
     background-color: #46A358;
     padding: 11px 28px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 4px;
     color: white;
+    opacity: 0.79;
 }
-.plant-text a::after{
-    display: block;
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: green;
-    transition: 0.4s;
 
-}
-.plant-text a:hover::after{
-   width: 100%;
-}
-.plant-text a:hover svg path{
-    stroke: #3D3D3D;
-}
-.plant-text a:hover{
-  background-color: #FBFBFB;
-   color: #3D3D3D;  
+.plant-text a:hover{ 
+   transition: 0.4s;
+   opacity: 1;
 }
 .blog-text{
    text-align: center;
