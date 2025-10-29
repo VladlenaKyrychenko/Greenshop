@@ -346,15 +346,34 @@ stroke: #46A358;
     font-weight: 400;
     margin-bottom: 25px;
 }
+
 .find-more{
      border-radius: 6px;
     background-color: #46A358;
     padding: 11px 28px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2px;
+    justify-content: space-between;
+    gap: 4px;
     color: white;
+}
+.plant-text a::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: 0.4s;
+
+}
+.plant-text a:hover::after{
+   width: 100%;
+}
+.plant-text a:hover svg path{
+    stroke: #3D3D3D;
+}
+.plant-text a:hover{
+  background-color: #FBFBFB;
+   color: #3D3D3D;  
 }
 .blog-text{
    text-align: center;
