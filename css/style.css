@@ -43,6 +43,7 @@
     justify-content: space-between;
     align-items: start;
     border-bottom: 1px solid  rgba(70, 163, 88, 0.50);
+    margin-bottom: 12px;
 }
 body a{
     color: #3D3D3D;
@@ -58,6 +59,9 @@ header nav ul li::after{
     margin-top: 22px;
     transition: 0.4s;
 }
+header nav ul li ul li::after{
+    display: none;
+}
 header nav ul li:hover::after{
     width: 100%;
     
@@ -67,6 +71,58 @@ header nav ul li:hover{
     color: #3D3D3D;
     font-weight: 700;
 }
+
+header nav ul li.dropdown{
+    position: relative;
+}
+header nav ul li ul.submenu{
+    position: absolute;
+    top: 67px;
+    left: -55px;
+    min-width: 188px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.4s;
+
+}
+header nav ul li.dropdown:hover .submenu{
+    height: 230px;
+
+}
+header nav ul li ul.submenu li{
+    background-color: #EDF6EE;
+    padding: 7px 14px;
+    
+
+}
+header nav ul li ul.submenu li:hover{
+    background-color: #46A358;
+}
+header nav ul li ul.submenu li:hover a{
+    color: white;
+}
+
+header nav ul li ul li.dropright svg{
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    stroke: white;
+}
+header nav ul li ul li.dropright{
+    position: relative;
+    
+}
+header nav ul li ul li ul.submenu2{
+    position: absolute;
+   
+   
+}
+header nav ul li ul li.dropright:hover .submenu2{
+    height: 230px;
+
+}
+
+
 a.login{
     color: #FFF;
     font-weight: 500;
@@ -137,6 +193,7 @@ h1{
     color: #FFF;
     cursor: pointer;
     border: 1px transparent solid;
+    font-family: 'Cera Pro Bold', sans-serif;
 }
 .shop-now:hover{
     background: white;
