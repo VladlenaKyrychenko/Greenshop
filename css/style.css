@@ -47,8 +47,8 @@
 }
 body a{
     color: #3D3D3D;
-   font-family: 'Cera Pro Regular', sans-serif;
-   font-size: 16px;
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 16px;
 }
 header nav ul li::after{
     display: block;
@@ -63,66 +63,75 @@ header nav ul li ul li::after{
     display: none;
 }
 header nav ul li:hover::after{
-    width: 100%;
-    
+    width: 100%; 
 }
-header nav ul li:hover{
+header nav > ul > li:hover> a{
     font-family: 'Cera Pro Bold', sans-serif;
     color: #3D3D3D;
     font-weight: 700;
 }
-
 header nav ul li.dropdown{
     position: relative;
+    flex: none;
+    width: 90px;
 }
 header nav ul li ul.submenu{
     position: absolute;
-    top: 67px;
+    top: 48px;
     left: -55px;
     min-width: 188px;
-    overflow: hidden;
-    height: 0;
+    opacity: 0;
+    visibility: hidden;
     transition: 0.4s;
-
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(10px);
 }
 header nav ul li.dropdown:hover .submenu{
-    height: 230px;
-
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 header nav ul li ul.submenu li{
     background-color: #EDF6EE;
-    padding: 7px 14px;
-    
-
+    padding: 7px 14px; 
 }
 header nav ul li ul.submenu li:hover{
     background-color: #46A358;
 }
-header nav ul li ul.submenu li:hover a{
+header nav ul li ul.submenu li:hover> a{
     color: white;
 }
-
 header nav ul li ul li.dropright svg{
     position: absolute;
     right: 17px;
     top: 12px;
     stroke: white;
 }
+header nav ul li ul li.dropright:hover svg{
+    stroke: white;
+    transform: rotate(180deg);
+}
 header nav ul li ul li.dropright{
     position: relative;
-    
 }
 header nav ul li ul li ul.submenu2{
     position: absolute;
-   
-   
+    top: -105px;
+    left: 100%;
+    opacity: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    min-width: 178px;
+    transition: 0.4s;
+    visibility: hidden;
+    margin-left: 2px;
+    transform: translateX(10px);
 }
-header nav ul li ul li.dropright:hover .submenu2{
-    height: 230px;
-
+.dropright:hover > .submenu2{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
-
-
 a.login{
     color: #FFF;
     font-weight: 500;
@@ -131,15 +140,29 @@ a.login{
     display: flex;
     gap: 50px;
 }
-
 .login{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     border-radius: 6px;
     background-color: #46A358;
     padding: 7px 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
+}
+.login:hover{
+    background-color: #3c8d4e;
+    transform: translateY(-1px);
+}
+.login:active{
+    transform: translateY(1px);
+    background-color: #357e46;
+}
+.login svg{
+    width: 18px;
+    height: 17px;
+    transition: 0.4s;
+}
+.login:hover svg{
+    transform: translateX(3px);
 }
 .span-welcome{
     display: inline-block;
@@ -202,7 +225,7 @@ h1{
     
 }
 .plant1{
-  position: relative;
+    position: relative;
 }
 .flower-small{
     position: absolute;
