@@ -472,19 +472,23 @@ stroke: #46A358;
 }
 .blog-post{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 44px;   
 }
 .blogs{
+    flex: 1 1 260px;
+    min-width: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #FBFBFB;
-    width: 268px;
 }
-.blogs img{
-    width: 100%;
+.blogs img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 .date-info{
     display: flex;
