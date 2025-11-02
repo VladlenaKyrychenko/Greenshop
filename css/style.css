@@ -217,12 +217,12 @@ h1{
     cursor: pointer;
     border: 1px transparent solid;
     font-family: 'Cera Pro Bold', sans-serif;
+    transition: 0.4s;
 }
 .shop-now:hover{
     background: white;
     color: #3D3D3D;
     border: 1px #46A358 solid;
-    
 }
 .plant1{
     position: relative;
@@ -368,8 +368,7 @@ stroke: #46A358;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    margin-bottom: 94px;
-    
+    margin-bottom: 94px;   
 }
 .page{
     display: flex;
@@ -394,13 +393,13 @@ stroke: #46A358;
     display: flex;
     justify-content: space-between;
     gap: 28px;
+    margin-bottom: 138px;
 }
 .plant-info-post{
     background: #FBFBFB;
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-bottom: 138px;
     position: relative; 
     max-width: 570px;
     width: 100%;
@@ -433,7 +432,6 @@ stroke: #46A358;
     font-weight: 400;
     margin-bottom: 25px;
 }
-
 .find-more{
      border-radius: 6px;
     background-color: #46A358;
@@ -445,8 +443,15 @@ stroke: #46A358;
     color: white;
     opacity: 0.79;
 }
-
-.plant-text a:hover{ 
+.find-more svg{
+    width: 15px;
+    height: 15px;
+    transition: 0.4s;
+}
+.find-more:hover svg{
+    transform: translateX(3px);
+}
+.plant-text:hover a{ 
    transition: 0.4s;
    opacity: 1;
 }
@@ -468,12 +473,13 @@ stroke: #46A358;
 .blog-post{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 44px;   
 }
 .blogs{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #FBFBFB;
     width: 268px;
 }
@@ -483,6 +489,7 @@ stroke: #46A358;
 .date-info{
     display: flex;
     color: #46A358;
+    font-family: "Cera Pro Medium", sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 4px;
@@ -490,6 +497,7 @@ stroke: #46A358;
 .blog-info{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     padding: 10px 13px;
 }
 h4{
@@ -506,6 +514,7 @@ h4{
     margin-bottom: 9px;
 }
 .read-more{
+    margin-top: auto;
     display: flex;
     align-items: center;
     gap: 3px;
