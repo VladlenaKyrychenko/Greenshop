@@ -245,10 +245,11 @@ h1{
 .categories{
     background-color: #FBFBFB;
 }
-h3{
+.categories > h3{
     color: #3D3D3D;
     font-size: 18px;
     font-weight: 700;
+    font-family: "Cera Pro Bold", sans-serif;
     padding: 12px 0 15px 18px;
 }
 .categories-list{
@@ -531,4 +532,44 @@ h4{
     color: #46A358;
     font-size: 14px;
     font-weight: 500;
+}
+.aboutUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 25px;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #3D3D3D;
+    font-size: 14px;
+}
+.contact > a{
+    color: #3D3D3D;
+    font-size: 14px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer > h3{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.rights{
+    color: #3D3D3D;
+    font-size: 14px;
+    text-align: center;
 }
