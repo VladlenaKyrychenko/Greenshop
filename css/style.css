@@ -537,6 +537,59 @@ h4{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FBFBFB;
+    padding: 24px 25px;
+    gap: 62px;
+}
+.aboutUs-post{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.aboutUs-post > p{
+    color: #727272;
+    font-size: 14px;
+}
+.aboutUs-post h4{
+color: #3D3D3D;
+font-family: "Cera Pro Bold", sans-serif;
+font-size: 17px;
+font-weight: 700;
+}
+.join-form{
+    display: flex;
+    gap: 0;
+    margin-bottom: 17px;
+}
+.join-form> input{
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    padding: 12px 86px 12px 11px;
+    color: #ACACAC;
+    font-size: 14px;
+}
+.join-form > button{
+    padding: 12px 26px;
+    color: white;
+    border-radius: 0 6px 6px 0;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.join > h4{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.join > p{
+    color: #727272;
+    font-size: 13px;
 }
 .footer-banner{
     display: flex;
@@ -561,8 +614,10 @@ h4{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FBFBFB;
+    padding: 33px 0 27px 23px;
 }
-.footer > h3{
+.footer > p{
     color: #3D3D3D;
     font-family: "Cera Pro Bold", sans-serif;
     font-size: 18px;
