@@ -37,7 +37,19 @@ body{
     margin: auto;
     border-bottom: solid 10px #46A358;
     padding: 52px 100px 50px;
+    position: relative;
 
+}
+.close-icon{
+   position: absolute;
+   top: 16px;
+   right: 16px;
+   cursor: pointer;
+   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.close-icon:hover{
+    transform: rotate(90deg) scale(1.1);
+    opacity: 0.8;
 }
 .line{
     display: inline;
@@ -48,6 +60,7 @@ body{
 .enter_links{
     text-align: center;
     font-weight: 500;
+    font-family: 'Cera Pro Medium', sans-serif;
     font-size: 20px;
     line-height: 80%;
     margin-bottom: 40px;   
@@ -113,6 +126,15 @@ input{
     border-style: none;
     border-radius: 5px;
     margin-bottom: 36px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #3c8d4e;
+    transform: translateY(-1px);
+}
+.button:active{
+    transform: translateY(1px);
+    background-color: #357e46;
 }
 .register_with{
     text-align: center;
