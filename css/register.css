@@ -64,21 +64,19 @@ body{
     line-height: 80%;
     margin-bottom: 40px;   
 }
-.login{
+.login-rg{
      text-decoration: none;
     color: #3D3D3D;  
 }
-.register{
+.register-rg{
      text-decoration: none;
     color: #46A358;
 }
-
 .enter{
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 14px;
 }
-
 .register_form{
    border-radius: 5px;
     border: 1px solid #EAEAEA;
@@ -86,7 +84,32 @@ body{
     font-size: 14px;
     margin-bottom: 16px;  
 }
-input{ 
+.register_form > input{
+    font-family: 'Cera Pro Regular', sans-serif;
+    padding: 12px 14px;  
+    color: #A5A5A5;
+    font-size: 14px;
+    font-weight: 400;  
+    width: 100%; 
+}
+.password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password > input{
+    font-family: 'Cera Pro Regular', sans-serif;
+    padding: 12px 14px;  
+    color: #A5A5A5;
+    font-size: 14px;
+    font-weight: 400;  
+    width: 95%; 
+}
+.passwordSVG{
+    width: 20px;
+    height: 20px;
+}
+.confirm_password > input{ 
     font-family: 'Cera Pro Regular', sans-serif;
     padding: 12px 14px;  
     color: #A5A5A5;
@@ -101,16 +124,14 @@ input{
     border-radius: 5px;
     border: 1px solid #EAEAEA;
     margin-bottom: 16px;
- }   
- .show_password{
-    padding: 10px 10px;
- }
+ } 
+
 .confirm_password{  
     border-radius: 5px;
     border: 1px solid #EAEAEA;
     margin-bottom: 41px;
 }
-.button{
+.button-rg{
     width: 100%;
     text-align: center;
     padding: 14px 0 14px;
@@ -124,11 +145,11 @@ input{
     margin-bottom: 36px;
     cursor: pointer;
 }
-.button:hover{
+.button-rg:hover{
     background-color: #3c8d4e;
     transform: translateY(-1px);
 }
-.button:active{
+.button-rg:active{
     transform: translateY(1px);
     background-color: #357e46;
 }
