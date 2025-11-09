@@ -262,6 +262,7 @@ h1{
     color: #46A358;
     font-weight: 700;
 }
+
 .nav{
    display: flex;
     justify-content: space-between;  
@@ -541,33 +542,62 @@ h4{
     padding: 24px 25px;
     gap: 45px;
 }
-.aboutUs-post{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-
+.aboutUs-post1, .aboutUs-post2, .aboutUs-post3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.aboutUs-post > p{
+
+.aboutUs-post1::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../img/Picture.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 77px;
+    height: 95px;
+}
+.aboutUs-post2::before{
+    display: block;
+    content: "";
+    background-image: url(../img/Picture2.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 90px;
+    height: 95px;
+}
+.aboutUs-post3::before{
+    display: block;
+    content: "";
+    background-image: url(../img/Picture3.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 90px;
+    height: 95px;
+    gap: 15px;
+}
+.aboutUs  p{
     color: #727272;
     font-size: 14px;
 }
-.aboutUs-post h4{
+.aboutUs h4{
     color: #3D3D3D;
     font-family: "Cera Pro Bold", sans-serif;
     font-size: 17px;
     font-weight: 700;
+    margin-top: 15px;
 }
 .vertical-line{
-width: 1px;
-height: 100px;
-flex-shrink: 0;
-background: rgba(70, 163, 88, 0.10);
+    width: 1px;
+    height: 100px;
+    flex-shrink: 0;
+    background: rgba(70, 163, 88, 0.10);
 }
 .vertical-line2{
-width: 1px;
-height: 100px;
-flex-shrink: 0;
-background: transparent;
+    width: 1px;
+    height: 100px;
+    flex-shrink: 0;
+    background: transparent;
 }
 .join-form{
     display: flex;
@@ -657,6 +687,13 @@ background: transparent;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.nav-footer ul li{
+    transition: 0.2s;
+}
+.nav-footer ul li:hover{
+    font-weight: 700;
+    color: #357e46;
 }
 .social-media{
     display: flex;
