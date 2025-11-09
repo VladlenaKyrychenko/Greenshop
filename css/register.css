@@ -31,14 +31,13 @@ body{
     font-family: 'Cera Pro Regular', sans-serif;
     color: #3D3D3D;
 }
-.container{ 
+.containerRegister{ 
     max-width: 500px;
     border: solid 1px silver;
     margin: auto;
     border-bottom: solid 10px #46A358;
     padding: 52px 100px 50px;
     position: relative;
-
 }
 .close-icon{
    position: absolute;
@@ -85,8 +84,7 @@ body{
     border: 1px solid #EAEAEA;
     color: #A5A5A5;
     font-size: 14px;
-    margin-bottom: 16px;
-    
+    margin-bottom: 16px;  
 }
 input{ 
     font-family: 'Cera Pro Regular', sans-serif;
@@ -94,10 +92,8 @@ input{
     color: #A5A5A5;
     font-size: 14px;
     font-weight: 400;  
-    width: 100%; 
-    
+    width: 100%;   
 }
-
 .password{  
     display: flex;
     justify-content: space-between;
@@ -148,7 +144,6 @@ input{
     flex-direction: column;
     gap: 15px;
 }
-
 .google{
     display: flex;
     justify-content: center;

@@ -35,8 +35,12 @@
 }
 .container{
     padding: 30px 120px 52px;
+    
+}
+body{
     font-family: 'Cera Pro Regular', sans-serif;
     font-size: 16px;
+    color: #3D3D3D;
 }
 .header{
     display: flex;
@@ -139,6 +143,12 @@ a.login{
 .list{
     display: flex;
     gap: 50px;
+}
+.svgButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 }
 .login{
     display: inline-flex;
