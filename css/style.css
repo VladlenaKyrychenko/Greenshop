@@ -104,8 +104,6 @@ body{
 .register_form > input{
     font-family: 'Cera Pro Regular', sans-serif;
     padding: 12px 14px;  
-    color: #A5A5A5;
-    font-size: 14px;
     font-weight: 400;  
     width: 100%; 
 }
