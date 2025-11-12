@@ -416,29 +416,89 @@ h1{
 .leftside{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.categories{
-    background-color: #FBFBFB;
+.categories, .price-range, .size {
+    background-color: #FBFBFB; 
+    display: flex;
+    flex-direction: column;
+    padding: 14px 18px 25px 18px;
+    gap: 16px;
 }
 .categories > h3{
     color: #3D3D3D;
     font-size: 18px;
     font-weight: 700;
     font-family: "Cera Pro Bold", sans-serif;
-    padding: 12px 0 15px 18px;
 }
-.categories-list{
+.custom-radio{
     display: flex;
-    flex-direction: column;
-    padding-left: 15px;
-    gap: 16px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding-left: 22px;
 }
-.categories a:hover{
-    color: #46A358;
-    font-weight: 700;
+.custom-radio input{
+    display: none;  
+}
+.custom-radio::after{
+    content: "(" attr(data-count) ")";
+    position: absolute;
+    right: 0;
+    top: 6px;
+    font-size: 14px;
+    transition: color 0.2s;
 }
 
+/* Selected state  (text bold and green) */
+.custom-radio input:checked + .label-text {
+  color: #46A358;
+  font-weight: 700;
+  font-family: "Cera Pro Bold", sans-serif;
+}
+
+/* Change count color when checked */
+.custom-radio:has(input:checked)::after {
+  color: #46A358;
+  font-weight: 700;
+  font-family: "Cera Pro Bold", sans-serif;
+}
+.custom-radio:hover .label-text {
+  color: #46A358;
+  font-weight: 700;
+  font-family: "Cera Pro Bold", sans-serif;
+}
+.slider{
+ -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 7px; 
+  background: rgba(70, 163, 88, 0.20);
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  transition: opacity .2s;   
+}
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #46A358;
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 15px; 
+  height: 15px; 
+  background: #46A358;
+  cursor: pointer; 
+}
 .nav{
    display: flex;
     justify-content: space-between;  
@@ -784,10 +844,9 @@ h4{
     border-radius: 6px;
     background: #FFF;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
-    padding: 12px 86px 12px 11px;
-    color: #ACACAC;
-    font-size: 14px;
+    padding: 12px 11px;
     font-family: 'Cera Pro Regular', sans-serif;
+    width: 100%;
 }
 .join-form > button{
     padding: 12px 26px;
