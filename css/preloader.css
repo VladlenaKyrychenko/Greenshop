@@ -8,7 +8,7 @@ body{
   align-items: center;
   justify-content: center;
   background: white;
-  z-index: 1;
+  z-index: 3;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease, visibility 0.5s ease;

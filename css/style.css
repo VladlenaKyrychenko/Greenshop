@@ -38,6 +38,7 @@
     
 }
 body{
+    position: relative;
     font-family: 'Cera Pro Regular', sans-serif;
     font-size: 16px;
     color: #3D3D3D;
@@ -207,11 +208,18 @@ body{
     padding: 12px 0;
 }
 .header{
+    position: sticky;
+    top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: start;
     border-bottom: 1px solid  rgba(70, 163, 88, 0.50);
     margin-bottom: 12px;
+    background: #FFF;
+    z-index: 2;
+}
+.burger{
+    display: none;
 }
 body a{
     color: #3D3D3D;
@@ -314,6 +322,9 @@ a.login{
     align-items: center;
     gap: 32px;
 }
+.mobile-actions{
+    display: none;
+}
 .login{
     display: inline-flex;
     align-items: center;
@@ -337,6 +348,9 @@ a.login{
 }
 .login:hover svg{
     transform: translateX(3px);
+}
+.menu-mobile, .burger{
+display: none;
 }
 .span-welcome{
     display: inline-block;
@@ -399,7 +413,11 @@ h1{
     border: 1px #46A358 solid;
 }
 .plant1{
+    max-width: 500px;
     position: relative;
+}
+.flower-bid{
+    width: 100%;
 }
 .flower-small{
     position: absolute;
@@ -653,6 +671,8 @@ stroke: #46A358;
     top: -50px;
    width: auto;
    left: 0;
+   max-width: 50%;
+   height: auto;
 }
 .plant-text{
     max-width: 293px;
@@ -716,14 +736,11 @@ stroke: #46A358;
 }
 .blog-post{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
-    gap: 44px;   
+    align-items: stretch; 
 }
 .blogs{
-    flex: 1 1 260px;
-    min-width: 220px;
+    max-width: 268px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -731,8 +748,6 @@ stroke: #46A358;
 }
 .blogs img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
 }
 .date-info{
     display: flex;
