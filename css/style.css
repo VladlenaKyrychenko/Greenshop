@@ -430,8 +430,19 @@ h1{
     gap: 50px;
 }
 .leftside{
+    max-width: 310px;  
+    flex-shrink: 0;    
     display: flex;
     flex-direction: column;
+}
+.sale {
+    width: 100%; 
+}
+
+.sale img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .categories, .price-range, .size {
     background-color: #FBFBFB; 
@@ -523,6 +534,7 @@ h1{
     cursor: pointer;
     width: 90px;
 }
+
 .nav{
    display: flex;
     justify-content: space-between;  
@@ -555,9 +567,8 @@ option{
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 90px;
-    gap: 33px;
 }
 .plant{
     display: flex;
@@ -565,6 +576,7 @@ option{
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .plant::before{
     display: block;

@@ -1,25 +1,55 @@
 @media screen and (max-width:1200px) {
-  .container{
-    padding: 15px;
-  }
-
-  .products{
-    gap: 15px;
-  }
-  .main-page{
-    display: block;
-  }
+  
     .main-page > img {
         width: 100%;
+    }
+}
+@media screen and (max-width:1398px){
+.container{
+    padding: 20px;
+  }
+ 
+   .main-page > img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1059px){
+  .main-page{
+    padding: 10px;
+  }
+  .plants{
+    gap: 18px;
+  }
+    .plant1 {
+        position: relative;
+          width: 100%;
+          max-width: 260px;
+          display: flex;
+          justify-content: center; 
+          align-items: center;
+          margin: 0 auto;      
+      }
+  .flower-big {
+          width: 100%;
+          display: block;
+      }
+
+  .flower-small {
+          position: absolute;
+          bottom: 5px;
+          left: 7px;
+          width: 40%;
+      }
+  .sale img {
+        width: fit-content; 
+         margin: 0 auto; 
     }
 }
 @media screen and (max-width:992px) {
     .welcome{
         padding: inherit;
     }
-    .products{
-        justify-content: center;
-    }
+   
     .plant-info-img{
        position: static;
     }
@@ -29,35 +59,260 @@
         gap: 20px;
     }
 }
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:852px) {
      .container{
     padding: 10px;
   }
-    .main-page > img {
+  .list{
+    gap: 20px;
+    align-items: center;
+  }
+  .header{
+    align-items: center;
+  }
+  header nav ul li ul.submenu{
+    top: 40px;
+    } 
+  header nav ul li::after {
+    display: none;
+    }
+  .main-page{
+    padding: 10px;
+  }
+  .plants{
+    gap: 18px;
+  }
+    .plant1 {
+        position: relative;
+          width: 100%;
+          max-width: 260px;
+          display: flex;
+          justify-content: center; 
+          align-items: center;
+          margin: 0 auto;      
+      }
+  .flower-big {
+          width: 100%;
+          display: block;
+      }
+
+  .flower-small {
+          position: absolute;
+          bottom: 5px;
+          left: 7px;
+          width: 40%;
+      }
+  .sale img {
+        width: fit-content; 
+         margin: 0 auto; 
+    }
+      .nav{
+      display: block;
+  }
+    .nav-list1{
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+  }
+      .plant-info-img{
+        position: static;
+      }
+      .blog-post{
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          gap: 20px;
+      }
+      .plant-info{
+          
+          margin-bottom: 18px;
+      }
+      .plant-text{
+          padding: 12px 15px 12px 0;
+      }
+      .pages{
+          margin-bottom: 20px;
+      }
+      .vertical-line, .vertical-line2{
+          display: none;
+      }
+}
+@media  screen and (max-width:695px) {
+  .containerRegister{
+      border: none;
+        padding: 15px 30px 15px;  
+    }
+    .header {
+    padding: 10px 20px;
+    align-items: center;
+    gap: 130px;
+  }
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid rgba(70,163,88,0.3);
+    padding: 20px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .list{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .mobile-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 12px;
+  }
+  header nav ul li ul li ul.submenu2{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    opacity: 0;
+}
+  .submenu,
+  .submenu2 {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: none;
+  }
+  nav ul li:hover::after {
+    width: 0;
+  }
+  .burger {
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3D3D3D;
+  }
+  nav,
+  .svgButton {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  nav.open {
+    display: block;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  h1, .planet{
+    font-size: 50px;
+  }
+    .main-page, .welcome {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    .plant1 {
+        position: relative;
         width: 100%;
+        max-width: 260px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 0 auto;      
     }
-      .products{
-        justify-content: center;
+    .leftside{
+      max-width: 100%;
+      flex-shrink: 1;
+        margin-bottom: 30px;
     }
-    .plant-info-img{
-       position: static;
+    .sale img {
+        width: fit-content; 
+         margin: 0 auto; 
     }
-    .blog-post{
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 20px;
+.nav{
+    display: block;
+}
+.nav-list1{
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+    .flower-big {
+        width: 100%;
+        display: block;
     }
+    .flower-small {
+        position: absolute;
+        bottom: 5px;
+        left: 7px;
+        width: 40%;
+    }
+    .plants{
+        display: block;
+    }
+    .plant-info{
+        flex-direction: column;
+        margin-bottom: 18px;
+        align-items: center;
+    }
+    .plant-text{
+        padding: 12px 15px 12px 0;
+    }
+    .pages{
+        margin-bottom: 20px;
+    }
+    .aboutUs{
+        flex-direction: column;
+    }
+    .aboutUs-post1, .aboutUs-post2, .aboutUs-post3{
+      align-items: center;
+    }
+
+    .vertical-line, .vertical-line2{
+        display: none;
+    }
+    .footer-banner{
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 13px;
+    }
+ .footer {
+    flex-direction: column; 
+    align-items: center;         
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 0;
+  }
+  .nav-footer ul {
+    align-items: center;          
+  }
+  .social-media {
+    align-items: center;
+  }
+  .social-links {
+    justify-content: center;     
+  }
+  .cards {
+    text-align: center;
+  }
 }
 @media screen and (max-width:540px) {
-}
-@media screen and (max-width:320px) {
-   .containerRegister{
-        padding: 7px;
-    }
-}
-@media (max-width: 480px) {
-    .containerRegister{
-        padding: 10px;
+  .containerRegister{
+      border: none;
+        padding: 15px 30px 15px;  
     }
     .header {
     padding: 10px 20px;
@@ -134,6 +389,9 @@
     gap: 25px;
     
   }
+  h1, .planet{
+    font-size: 50px;
+  }
     .main-page, .welcome {
         flex-direction: column;
         align-items: center; 
@@ -152,8 +410,9 @@
     .leftside{
         margin-bottom: 15px;
     }
-    .sale > img{
-        width: 100%;
+  .sale img {
+        width: fit-content; 
+         margin: 0 auto; 
     }
 .nav{
     display: block;
@@ -219,6 +478,168 @@
     justify-content: center;     
   }
 
+  .cards {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+    .containerRegister{
+      border: none;
+        padding: 15px 30px 15px;  
+    }
+    .header {
+    padding: 10px 20px;
+    align-items: center;
+    gap: 130px;
+  }
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid rgba(70,163,88,0.3);
+    padding: 20px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .list{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .mobile-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 12px;
+  }
+  header nav ul li ul li ul.submenu2{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    opacity: 0;
+}
+  .submenu,
+  .submenu2 {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: none;
+  }
+  nav ul li:hover::after {
+    width: 0;
+  }
+  .burger {
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3D3D3D;
+  }
+  nav,
+  .svgButton {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  nav.open {
+    display: block;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+  }
+  h1, .planet{
+    font-size: 50px;
+  }
+    .main-page, .welcome {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    .plant1 {
+        position: relative;
+        width: 100%;
+        max-width: 260px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 0 auto;      
+    }
+    .leftside{
+        margin-bottom: 15px;
+    }  
+.nav{
+    display: block;
+}
+.nav-list1{
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+    .flower-big {
+        width: 100%;
+        display: block;
+    }
+    .flower-small {
+        position: absolute;
+        bottom: 5px;
+        left: 7px;
+        width: 40%;
+    }
+    .plants{
+        display: block;
+    }
+    .plant-info{
+        flex-direction: column;
+        margin-bottom: 18px;
+    }
+    .plant-text{
+        padding: 12px 15px 12px 0;
+    }
+    .pages{
+        margin-bottom: 20px;
+    }
+    .aboutUs{
+        flex-wrap: wrap;
+    }
+    .vertical-line, .vertical-line2{
+        display: none;
+    }
+    .footer-banner{
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 13px;
+    }
+ .footer {
+    flex-direction: column; 
+    align-items: center;         
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 0;
+  }
+  .nav-footer ul {
+    align-items: center;          
+  }
+  .social-media {
+    align-items: center;
+  }
+  .social-links {
+    justify-content: center;     
+  }
   .cards {
     text-align: center;
   }
